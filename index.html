@@ -604,21 +604,21 @@
 
     <!-- Quick Quote Modal -->
     <div id="quoteModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 10000; align-items: center; justify-content: center;">
-        <div style="background: var(--card-bg); border-radius: 20px; max-width: 500px; width: 90%; padding: 40px; position: relative; border: 1px solid rgba(255,255,255,0.1);">
-            <button onclick="closeQuoteModal()" style="position: absolute; top: 15px; right: 15px; background: transparent; border: none; color: white; font-size: 1.5rem; cursor: pointer;"><i
+        <div style="background: var(--card-bg); border-radius: 20px; max-width: 500px; width: 90%; padding: 40px; position: relative; border: 1px solid rgba(26, 43, 60, 0.1);">
+            <button onclick="closeQuoteModal()" style="position: absolute; top: 15px; right: 15px; background: transparent; border: none; color: var(--text-main); font-size: 1.5rem; cursor: pointer;"><i
                     class="fa-solid fa-times"></i></button>
-            <h3 style="color: white; margin-bottom: 25px; text-align: center;">Request a Quote</h3>
+            <h3 style="color: var(--text-main); margin-bottom: 25px; text-align: center;">Request a Quote</h3>
             <form action="https://formsubmit.co/contact@jpsenggmaterials.com" method="POST" id="quote-form">
                 <input type="hidden" name="_subject" value="New Website Quote Request">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_template" value="table">
                 <input type="hidden" name="_next" value="thanks.html">
                 <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
-                <input id="quote-name" name="name" type="text" placeholder="Your Name *" required style="width: 100%; padding: 12px; margin-bottom: 15px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; color: white; font-family: inherit;">
-                <input id="quote-email" name="email" type="email" placeholder="Your Email *" required style="width: 100%; padding: 12px; margin-bottom: 15px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; color: white; font-family: inherit;">
-                <input id="quote-phone" name="phone" type="tel" placeholder="Phone Number *" required style="width: 100%; padding: 12px; margin-bottom: 15px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; color: white; font-family: inherit;">
-                <input id="quote-product" name="product" type="text" placeholder="Product Name" style="width: 100%; padding: 12px; margin-bottom: 15px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; color: white; font-family: inherit;">
-                <textarea id="quote-message" name="message" placeholder="Requirements / Message *" required style="width: 100%; padding: 12px; margin-bottom: 20px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; color: white; font-family: inherit; min-height: 100px; resize: vertical;"></textarea>
+                <input id="quote-name" name="name" type="text" placeholder="Your Name *" required class="form-control" style="margin-bottom: 15px;">
+                <input id="quote-email" name="email" type="email" placeholder="Your Email *" required class="form-control" style="margin-bottom: 15px;">
+                <input id="quote-phone" name="phone" type="tel" placeholder="Phone Number *" required class="form-control" style="margin-bottom: 15px;">
+                <input id="quote-product" name="product" type="text" placeholder="Product Name" class="form-control" style="margin-bottom: 15px;">
+                <textarea id="quote-message" name="message" placeholder="Requirements / Message *" required class="form-control" style="margin-bottom: 20px; min-height: 100px; resize: vertical;"></textarea>
                 <button type="submit" class="btn btn-primary" style="width: 100%; padding: 15px;">Send Enquiry</button>
             </form>
         </div>
@@ -627,17 +627,17 @@
     <!-- Callback Modal -->
     <div id="callbackModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 10000; align-items: center; justify-content: center;">
         <div style="background: var(--card-bg); border-radius: 20px; max-width: 450px; width: 90%; padding: 40px; position: relative; border: 1px solid rgba(255,255,255,0.1);">
-            <button onclick="closeCallbackModal()" style="position: absolute; top: 15px; right: 15px; background: transparent; border: none; color: white; font-size: 1.5rem; cursor: pointer;"><i
+            <button onclick="closeCallbackModal()" style="position: absolute; top: 15px; right: 15px; background: transparent; border: none; color: var(--text-main); font-size: 1.5rem; cursor: pointer;"><i
                     class="fa-solid fa-times"></i></button>
-            <h3 style="color: white; margin-bottom: 10px; text-align: center;">Request a Callback</h3>
+            <h3 style="color: var(--text-main); margin-bottom: 10px; text-align: center;">Request a Callback</h3>
             <p style="color: var(--text-muted); text-align: center; margin-bottom: 25px; font-size: 0.9rem;">We'll call you back within 30 minutes</p>
             <form action="https://formsubmit.co/contact@jpsenggmaterials.com" method="POST">
                 <input type="hidden" name="_subject" value="New Callback Request">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_next" value="thanks.html">
-                <input type="text" placeholder="Your Name *" required style="width: 100%; padding: 12px; margin-bottom: 15px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; color: white; font-family: inherit;">
-                <input type="tel" placeholder="Phone Number *" required style="width: 100%; padding: 12px; margin-bottom: 15px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; color: white; font-family: inherit;">
-                <select required style="width: 100%; padding: 12px; margin-bottom: 20px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; color: white; font-family: inherit; cursor: pointer;">
+                <input type="text" placeholder="Your Name *" required class="form-control" style="margin-bottom: 15px;">
+                <input type="tel" placeholder="Phone Number *" required class="form-control" style="margin-bottom: 15px;">
+                <select required class="form-control" style="margin-bottom: 20px; cursor: pointer;">
                     <option value="">Preferred Time *</option>
                     <option value="asap">ASAP</option>
                     <option value="morning">Morning (9 AM - 12 PM)</option>
